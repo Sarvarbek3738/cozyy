@@ -16,7 +16,7 @@
 const minus = document.querySelector(".minus");
 const pilus = document.querySelector(".pilus");
 const sonelement = document.querySelector(".son");
-let son = localStorage.getItem("son") ? parseInt(localStorage.getItem("son")) : 0;
+let son = localStorage.getItem("son") ? localStorage.getItem("son") : 0;
 sonelement.textContent = son;
 pilus.addEventListener("click", () => {
     son++;
